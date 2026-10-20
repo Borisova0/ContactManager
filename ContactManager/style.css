@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5fb;
+    margin: 0;
+    padding: 30px;
+    color: #292a40;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #6354c7;
+    font-size: 36px;
+}
+
+header p {
+    color: #777;
+}
+
+.form-section,
+.contacts-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #7465d6;
+}
+
+button {
+    background: #7465d6;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #5847bc;
+}
+
+#saveButton {
+    width: 100%;
+}
+
+.contact-card {
+    background: #f8f7ff;
+    padding: 18px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #e8e5fa;
+}
+
+.contact-card h3 {
+    margin: 0 0 10px;
+}
+
+.contact-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.delete-btn {
+    background: #e85b70;
+}
+
+.delete-btn:hover {
+    background: #ca4055;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

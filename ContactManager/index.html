@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер контактов</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мои контакты</h1>
+            <p>Удобное управление контактами</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Добавить контакт</h2>
+
+            <form id="contactForm">
+                <input type="text" id="name"
+                       placeholder="Имя" required>
+
+                <input type="tel" id="phone"
+                       placeholder="Номер телефона" required>
+
+                <input type="email" id="email"
+                       placeholder="Электронная почта">
+
+                <select id="group">
+                    <option value="Семья">Семья</option>
+                    <option value="Друзья">Друзья</option>
+                    <option value="Учёба">Учёба</option>
+                    <option value="Работа">Работа</option>
+                </select>
+
+                <button type="submit" id="saveButton">
+                    Сохранить контакт
+                </button>
+            </form>
+        </section>
+
+        <section class="contacts-section">
+            <h2>Список контактов</h2>
+
+            <input type="text" id="search"
+                   placeholder="Поиск контакта...">
+
+            <select id="filterGroup">
+                <option value="Все">Все группы</option>
+                <option value="Семья">Семья</option>
+                <option value="Друзья">Друзья</option>
+                <option value="Учёба">Учёба</option>
+                <option value="Работа">Работа</option>
+            </select>
+
+            <div id="contactList"></div>
+        </section>
+    </div>
+</body>
+</html>
